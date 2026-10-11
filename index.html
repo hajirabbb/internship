@@ -27,12 +27,7 @@
         <a href="#profile">Profile<span class="material-symbols-outlined">
         person</span></a>
  </nav>
-       <div class="main-content">
-        <div id="top" class="top">
-         <p>Welcome back Hajira 👋</p>
-         <span class="material-symbols-outlined">search</span>
-        <img src="assets/images/profile.png" id="profile" alt="Profile picture"> 
-        </div>  
+       
    
  
  <main>
@@ -41,49 +36,203 @@
  </div>
  
   <section>
- <div class="Intern-table">
-    <table>
-        <caption>Intern Table</caption>
+
+    
+ <div class="table-card">
+  <div class="table-toolbar">
+    <div class="table-count">
+      <span class="count-number">6</span>
+      <span class="count-label">total interns</span>
+    </div>
+
+    <div class="toolbar-actions">
+        <div class="search-box">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>
+  </svg>
+  <input type="search" id="table-search" placeholder="Search interns...">
+</div>
+      <button class="btn btn--ghost">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 5h18M6 12h12M10 19h4"/>
+        </svg>
+        Filters
+      </button>
+      <button class="btn btn--primary">+ Add Intern</button>
+    </div>
+  </div>
+
+    <table class="custom-table">
         <thead>
             <tr >
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone Number</th>
+            <th><input type="checkbox" class="row-check"></th>
+              <th>Name <span class="sort">⇅</span></th>
+               <th>Email <span class="sort">⇅</span></th>
+                 <th>Phone Number <span class="sort">⇅</span></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Hajira</td>
-                <td>hajira@gmail.com</td>
-                <td>0243668394</td>
+                <td><input type="checkbox" class="row-check"></td>
+                <td>
+         <div class="name-cell">
+        <span class="avatar avatar--blue">HJ</span>
+              <span>Hajira</span>
+               </div>
+             </td>
+              
+               <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="M3 7l9 6 9-6"/>
+    </svg>
+    <span>hajira@gmail.com</span>
+  </div>
+</td>
+                <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>
+    </svg>
+    <span>0243668394</span>
+  </div>
+</td>
             </tr>
             <tr>
-                <td>Lily</td>
-                <td>lily@gmail.com</td>
-                <td>0540723121</td>
+                <td><input type="checkbox" class="row-check"></td>
+                <td>
+                 <div class="name-cell">
+        <span class="avatar avatar--orange">LI</span>
+              <span>Lily</span>
+               </div>
+               </td>
+               <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="M3 7l9 6 9-6"/>
+    </svg>
+    <span>lily@gmail.com</span>
+  </div>
+</td>
+                <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>
+    </svg>
+    <span>0543216789</span>
+  </div>
+</td>
             </tr>
             <tr>
-                <td>Gladys</td>
-                <td>gladys@gmail.com</td>
-                <td>053217689</td>
+                <td><input type="checkbox" class="row-check"></td>
+                <td>
+                <div class="name-cell">
+             <span class="avatar avatar--purple">GL</span>
+              <span>Gladys</span>
+               </div>
+               </td>
+                   <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="M3 7l9 6 9-6"/>
+    </svg>
+    <span>gladys@gmail.com</span>
+  </div>
+</td>
+               <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>
+    </svg>
+    <span>054321567</span>
+  </div>
+</td>
             </tr>
             <tr>
-            <td>Ama</td>
-            <td>ama@gmail.com</td>
-            <td>0432156789</td>
+            <td><input type="checkbox" class="row-check"></td>
+             <td>
+            <div class="name-cell">
+        <span class="avatar avatar--green">AM</span>
+              <span>Ama</span>
+               </div>
+               </td>
+          <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="M3 7l9 6 9-6"/>
+    </svg>
+    <span>ama@gmail.com</span>
+  </div>
+</td>
+           <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>
+    </svg>
+    <span>024567380</span>
+  </div>
+</td>
             </tr>
 
             <tr>
-                <td>Yaa</td>
-                <td>yaa@gmail.com</td>
-                <td>023456789</td>
+                <td><input type="checkbox" class="row-check"></td>
+                <td>
+                 <div class="name-cell">
+        <span class="avatar avatar--green">YA</span>
+              <span>Yaa</span>
+               </div>
+               </td>
+                <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="M3 7l9 6 9-6"/>
+    </svg>
+    <span>yaa@gmail.com</span>
+  </div>
+</td>
+               <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>
+    </svg>
+    <span>024567322</span>
+  </div>
+</td>
             </tr>
             <tr>
-                <td>Kobby</td>
-                <td>kobby@gmail.com</td>
-                <td>024567321</td>
+                <td><input type="checkbox" class="row-check"></td>
+                <td>
+               <div class="name-cell">
+        <span class="avatar avatar--pink">KB</span>
+              <span>Kobby</span>
+               </div>
+               </td>
+                <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="M3 7l9 6 9-6"/>
+    </svg>
+    <span>kobby@gmail.com</span>
+  </div>
+</td>
+    <td>
+  <div class="icon-cell">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>
+    </svg>
+    <span>024567321</span>
+  </div>
+</td>
             </tr>
-
+<tr class="empty-row is-hidden">
+  <td colspan="4">No interns found</td>
+</tr>
         </tbody>
     </table>
 
@@ -98,6 +247,7 @@
     <p>&copy; 2026 Ghana Interbank Payment  and Settlement Systems</p>
  </footer>
     
-    
+  <script src="js/table.js
+  "></script>  
 </body>
 </html>
