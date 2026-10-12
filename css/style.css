@@ -102,6 +102,8 @@ nav a .material-symbols-outlined {
 }
 
 footer{
+    position: relative;
+    left: 300px;
     display: flex;
     justify-content: flex-start;
     gap:50px;
@@ -290,8 +292,42 @@ tbody td:first-child {
 }
 
 .table-card {
+ width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-wrap {
   overflow-x: auto;
 }
+
+.custom-table {
+  min-width: 600px;  
+}
+
+.custom-table th,
+.custom-table td {
+  white-space: nowrap;
+}
+
+.main,
+.main main,
+.main section,
+.table-card {
+  min-width: 0;
+  max-width: 100%;
+}
+
+
+.custom-table {
+  min-width: 600px;
+}
+
+.custom-table th,
+.custom-table td {
+  white-space: nowrap;
+}
+
 
 @media (max-width: 700px) {
   .table-toolbar {
@@ -302,6 +338,7 @@ tbody td:first-child {
 
   table {
     min-width: 520px;
+    overflow-x: auto;
   }
 }
 
@@ -391,10 +428,7 @@ tbody tr.is-hidden { display: none; }
   color: #8a94a6;
   padding: 32px 16px;
 }
-.table-card {
-  width: 100%;          /* fills the panel instead of stopping short */
-  overflow-x: auto;
-}
+
 
 table { min-width: 560px; }
 #dashboard{
@@ -403,6 +437,8 @@ table { min-width: 560px; }
 }
 
 @media (max-width: 900px) {
+
+
   .main {
     flex-direction: column;
     gap: 20px;
@@ -423,7 +459,27 @@ table { min-width: 560px; }
     border-bottom: 1px solid rgba(15, 118, 110, 0.25);
     overflow-x: auto;
   }
+   
+  .logo{
+    width: 40px;
+    height: 40px;
+    margin: 0 12px 0 0;
+  }
 
+  .table-card {
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-card table {
+  width: 100%;
+  min-width: 600px; 
+
+
+.table-card td,
+.table-card th {
+  white-space: nowrap;
+}
   .main nav img {
     width: 40px;
     height: 40px;
@@ -434,6 +490,8 @@ table { min-width: 560px; }
     margin-bottom: 0;
     white-space: nowrap;
   }
+  
+}
 }
 
 @media (max-width: 600px) {
@@ -450,4 +508,20 @@ table { min-width: 560px; }
   .search-box input { width: 100%; }
 
   .top { flex-wrap: wrap; gap: 8px; }
+
+    .table-card {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-card table {
+  width: 100%;
+  min-width: 600px; 
+}
+
+.table-card td,
+.table-card th {
+  white-space: nowrap;
+}
 }
